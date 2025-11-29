@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Projects — Nathiya S</title>
+<style>
+  body{margin:0;font-family:Inter, Arial, sans-serif;background:#f6f6fb;color:#222}
+  nav{background:#5A00A3;padding:12px 20px;display:flex;justify-content:center;gap:30px;position:sticky;top:0}
+  nav a{color:#fff;text-decoration:none;font-weight:600}
+  nav a.active{text-decoration:underline}
+  .container{max-width:1000px;margin:28px auto;padding:0 18px}
+  h1{text-align:center;color:#222}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 8px 20px rgba(20,20,30,0.06);border:1px solid #f0f0f2}
+  .card h3{margin:0 0 8px 0;color:#5A00A3}
+  .tags{font-size:13px;color:#666;margin-top:10px}
+  .back{display:inline-block;margin:18px 0;color:#5A00A3;text-decoration:none}
+  footer{text-align:center;padding:18px;margin:20px 0;color:#fff;background:#5A00A3;border-radius:8px}
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <h1>Projects</h1>
+    <p style="text-align:center;color:#555;max-width:800px;margin:auto">Below are detailed descriptions of selected projects I completed during college and internships.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h3>DESIGN OF ADAPTIVE SLIDING MODE CONTROL FOR EVs WITH HYBRID ENERGY STORAGE</h3>
+        <p>Developed an adaptive sliding-mode controller to manage power distribution between battery and hybrid storage (battery + supercapacitor). The controller adapts online to changing vehicle load and improves transient response and battery life. The project covered mathematical modeling, simulation in MATLAB/Simulink, design of power interface, and prototype testing with microcontroller-based hardware-in-the-loop.</p>
+        <p class="tags"><strong>Key topics:</strong> Control systems, power electronics, EV drive, MATLAB/Simulink, microcontroller prototype</p>
+      </div>
+
+      <div class="card">
+        <h3>Efficient IoT-Based Landslide and Flood Alert System</h3>
+        <p>Designed a sensor network to monitor water levels, rainfall and soil moisture. Microcontrollers gather sensor data and send to a cloud service. Threshold-based algorithms detect hazard conditions and trigger SMS/notification alerts to authorities and residents.</p>
+        <p class="tags"><strong>Key topics:</strong> IoT, sensors, GSM alerts, data logging</p>
+      </div>
+
+      <div class="card">
+        <h3>Green House Monitoring System</h3>
+        <p>Built an embedded system to automatically adjust LED lighting depending on temperature and grow conditions, and provided manual override modes for users. Implemented using Arduino and sensor feedback.</p>
+        <p class="tags"><strong>Key topics:</strong> Embedded systems, sensors, automation</p>
+      </div>
+
+      <div class="card">
+        <h3>Automatic Street Light Control System</h3>
+        <p>Implemented an LDR-based control to switch lights ON at low ambient light and OFF during daylight — a simple energy-saving solution deployed as a small-scale prototype.</p>
+        <p class="tags"><strong>Key topics:</strong> Sensors, energy saving, microcontroller</p>
+      </div>
+    </div>
+
+    <a class="back" href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>© 2025 Nathiya S</footer>
+</body>
+</html>
