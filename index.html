@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nathiya S | Portfolio</title>
+<link rel="icon" href="data:," />
+<style>
+  :root{
+    --accent:#5A00A3;
+    --bg:#f6f6fb;
+    --card:#ffffff;
+    --muted:#666;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter, Arial, sans-serif;background:var(--bg);color:#222}
+  nav{background:var(--accent);padding:12px 20px;display:flex;justify-content:center;gap:30px;position:sticky;top:0;z-index:10}
+  nav a{color:#fff;text-decoration:none;font-weight:600}
+  nav a.active{text-decoration:underline}
+  .container{max-width:1000px;margin:28px auto;padding:0 18px}
+  .hero{display:flex;gap:24px;align-items:center;background:var(--card);padding:30px;border-radius:12px;box-shadow:0 6px 18px rgba(20,20,30,0.06)}
+  .avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;border:4px solid var(--accent)}
+  .hero-info h1{margin:0;font-size:28px}
+  .hero-info p{margin:8px 0;color:var(--muted)}
+  .cta{margin-top:14px}
+  .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+  section{background:var(--card);margin-top:18px;padding:22px;border-radius:10px;box-shadow:0 6px 12px rgba(20,20,30,0.04)}
+  h2{margin:0 0 12px 0;color:var(--accent);border-left:4px solid var(--accent);padding-left:10px}
+  .skills .skill{margin:12px 0}
+  .bar{background:#eee;border-radius:8px;overflow:hidden;height:14px}
+  .bar span{display:block;height:100%;background:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .project-teaser{padding:16px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f2}
+  footer{text-align:center;padding:18px;margin:20px 0;color:#fff;background:var(--accent);border-radius:8px;max-width:1000px;margin-left:auto;margin-right:auto}
+  a.download{display:inline-block;margin-left:8px;color:var(--accent);font-weight:700}
+  @media(max-width:640px){.hero{flex-direction:column;align-items:center;text-align:center}}
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <div class="hero">
+      <img src="profile.jpg" alt="Nathiya S" class="avatar" onerror="this.src='https://via.placeholder.com/140'">
+      <div class="hero-info">
+        <h1>Nathiya S</h1>
+        <p>Final Year — B.E. Electrical & Electronics Engineering · Embedded Systems · IoT · MATLAB</p>
+        <div class="cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="download" href="RESUME.pdf" target="_blank">Download Resume (PDF)</a>
+        </div>
+        <p style="color:var(--muted);margin-top:8px;font-size:14px">
+          Email: <a href="mailto:nathiyaaskrr@gmail.com">nathiyaaskrr@gmail.com</a> · Phone: +91 94873 23822
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I am an Electrical & Electronics engineering student with practical experience in embedded systems, IoT-based solutions and automation projects. I like building hardware + software prototypes and learning new tools to deliver reliable systems.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill"><strong>Embedded Systems</strong>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill"><strong>IoT & Sensors</strong>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill"><strong>MATLAB & Simulink</strong>
+          <div class="bar"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill"><strong>Arduino</strong>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill"><strong>Python (Basics)</strong>
+          <div class="bar"><span style="width:60%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div style="line-height:1.6">
+        <strong>B.E. — Electrical & Electronics Engineering</strong><br>
+        Chettinad College of Engineering & Technology (2022–2026) — CGPA: 8.23 (upto 6th sem)<br><br>
+        <strong>HSC</strong> — Cheran Matric Higher Secondary School — 83% (2022) <br>
+        <strong>SSLC</strong> — Cheran Matriculation School — 68% (2020)
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="project-teaser">
+          <strong>DESIGN OF ADAPTIVE SLIDING MODE CONTROL FOR EVs WITH HYBRID ENERGY STORAGE</strong>
+          <p style="margin:8px 0;color:#444">Design and simulation of an adaptive sliding-mode controller for electric vehicles that manages power flow between the battery and hybrid energy storage (e.g., supercapacitor) to improve response and extend battery life. Includes system modeling, controller design, and hardware-in-the-loop testing using microcontrollers and MATLAB/Simulink.</p>
+          <p style="font-size:13px;color:var(--muted)"><strong>Tools:</strong> MATLAB/Simulink · Microcontroller · Power electronics · Control theory</p>
+        </div>
+
+        <div class="project-teaser">
+          <strong>Efficient IoT-Based Landslide and Flood Alert System</strong>
+          <p style="margin:8px 0;color:#444">Sensors monitor water level, rainfall and soil moisture; microcontrollers send real-time data to a cloud server; threshold algorithms trigger instant SMS/app alerts to reduce disaster impact.</p>
+          <p style="font-size:13px;color:var(--muted)"><strong>Tools:</strong> Arduino · IoT · GSM/SMS</p>
+        </div>
+
+        <div class="project-teaser">
+          <strong>Green House Monitoring System</strong>
+          <p style="margin:8px 0;color:#444">Automates LED brightness based on temperature and supports manual/automatic modes for environmental control and energy savings.</p>
+          <p style="font-size:13px;color:var(--muted)"><strong>Tools:</strong> Arduino · Sensors · Embedded C</p>
+        </div>
+
+        <div class="project-teaser">
+          <strong>Automatic Street Light Control System</strong>
+          <p style="margin:8px 0;color:#444">Uses LDR sensors to detect ambient light and switch street lights ON/OFF automatically, improving energy efficiency.</p>
+          <p style="font-size:13px;color:var(--muted)"><strong>Tools:</strong> LDR · Microcontroller · Energy saving</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2025 Nathiya S — Built with GitHub Pages</footer>
+</body>
+</html>
